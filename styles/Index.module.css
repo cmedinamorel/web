@@ -1,0 +1,49 @@
+.pageWrapper{
+    display: inline-block;
+    position: fixed;
+    float: left;
+    width: 76%;
+    position: fixed;
+    z-index: -1;
+}
+
+.columnMain{
+    display: inline-block;
+    float: right;
+    width: 375px;
+    height: auto;
+}
+
+.bannerWrapper{
+    height: 100vh;
+    background: url('/Photo/bg-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 70%;
+}
+
+@media (max-width:769px){
+
+    .pageWrapper{
+        width: 52%;
+    }
+
+    .bannerWrapper{
+        background: url('/Photo/bg-tablet.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 115%;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 426px){
+    .pageWrapper{
+        display: none;
+    }
+
+    .columnMain{
+        width: 100%;
+    }
+}
